@@ -529,50 +529,6 @@ p {
   font-weight: 700;
 }
 
-.hero-badge {
-  justify-self: start;
-  background: rgba(255, 255, 255, 0.96);
-  backdrop-filter: blur(10px);
-  border-radius: 16px;
-  padding: 14px 16px;
-  box-shadow: var(--shadow);
-  display: grid;
-  gap: 4px;
-  max-width: 260px;
-  margin-left: clamp(20px, 6vw, 84px);
-}
-
-.sticky-request {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.sticky-request:hover,
-.sticky-request:focus-visible {
-  transform: translateY(-2px);
-  box-shadow: 0 18px 28px rgba(15, 23, 42, 0.2);
-}
-
-body.modal-open .sticky-request {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.sticky-request-hint {
-  display: inline-block;
-  margin-top: 3px;
-  color: var(--primary-dark);
-  font-size: 0.78rem;
-  font-weight: 700;
-}
-
-.hero-badge strong {
-  color: var(--secondary);
-}
-
-.hero-badge span {
-  color: var(--muted);
-  font-size: 0.9rem;
-}
 
 .trust-bar {
   margin-top: -18px;
@@ -1293,10 +1249,6 @@ body.modal-open .sticky-request {
     margin-left: clamp(28px, 7vw, 110px);
   }
 
-  .hero-badge {
-    margin-left: clamp(28px, 7vw, 110px);
-  }
-
   .hero-actions {
     flex-wrap: wrap;
   }
@@ -1411,38 +1363,6 @@ body.modal-open .sticky-request {
   .gallery-grid img:first-child {
     grid-row: span 2;
     height: 100%;
-  }
-
-  .hero-badge {
-    justify-self: end;
-    align-self: end;
-  }
-
-  .hero-badge.sticky-request {
-    position: fixed;
-    right: 18px;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-left: 0;
-    max-width: 260px;
-    z-index: 35;
-    border: 1px solid rgba(15, 118, 110, 0.2);
-    animation: requestFloat 2.6s ease-in-out infinite;
-  }
-
-  .hero-badge.sticky-request:hover,
-  .hero-badge.sticky-request:focus-visible {
-    transform: translateY(calc(-50% - 2px));
-  }
-
-  @keyframes requestFloat {
-    0%,
-    100% {
-      box-shadow: 0 10px 24px rgba(17, 24, 39, 0.14);
-    }
-    50% {
-      box-shadow: 0 18px 32px rgba(17, 24, 39, 0.2);
-    }
   }
 
   .mobile-cta-bar {

@@ -7,7 +7,7 @@ const translations = {
 		navRequest: "Αίτημα Διαμονής",
 
 		heroEyebrow: "Άμεση επικοινωνία • Γρήγορο αίτημα • Mobile friendly",
-		heroTitle: "Άνετη διαμονή στην όμορφη Παλαιόχωρα",
+		heroTitle: "Μια πιο κομψή εμπειρία διαμονής στην Παλαιόχωρα",
 		heroText:
 			"Ανακαλύψτε φιλόξενα δωμάτια και διαμερίσματα για ζευγάρια, οικογένειες και καλοκαιρινούς ταξιδιώτες, με εύκολη και άμεση επικοινωνία για τη διαμονή σας.",
 		heroCtaPrimary: "Έλεγχος Διαθεσιμότητας",
@@ -139,7 +139,7 @@ const translations = {
 		navRequest: "Stay Request",
 
 		heroEyebrow: "Direct contact • Fast request • Mobile friendly",
-		heroTitle: "Comfortable stay in beautiful Paleochora",
+		heroTitle: "A more elegant stay experience in beautiful Paleochora",
 		heroText:
 			"Discover welcoming rooms and apartments for couples, families and summer travelers, with easy and direct communication for your stay request.",
 		heroCtaPrimary: "Check Availability",

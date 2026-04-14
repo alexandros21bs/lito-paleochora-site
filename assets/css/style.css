@@ -106,9 +106,10 @@ p {
   position: sticky;
   top: 0;
   z-index: 30;
-  background: rgba(247, 245, 240, 0.92);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(17, 24, 39, 0.06);
+  box-shadow: 0 8px 24px rgba(17, 24, 39, 0.04);
   transition: background 0.24s ease, box-shadow 0.24s ease, border-color 0.24s ease;
 }
 
@@ -437,7 +438,7 @@ p {
 
 .hero {
   position: relative;
-  min-height: max(74vh, 540px);
+  min-height: 82vh;
   display: flex;
   align-items: end;
   overflow: hidden;
@@ -457,7 +458,7 @@ p {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(to top, rgba(17, 24, 39, 0.64), rgba(17, 24, 39, 0.14) 48%, rgba(17, 24, 39, 0.08)),
+    linear-gradient(to top, rgba(17, 24, 39, 0.78), rgba(17, 24, 39, 0.14)),
     linear-gradient(to right, rgba(17, 24, 39, 0.42), rgba(17, 24, 39, 0.04));
 }
 
@@ -475,7 +476,7 @@ p {
   background: linear-gradient(145deg, rgba(17, 24, 39, 0.32), rgba(17, 24, 39, 0.12));
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 18px;
-  padding: 18px 16px;
+  padding: 18px 0;
   backdrop-filter: blur(4px);
   margin-left: clamp(20px, 6vw, 84px);
 }
@@ -493,7 +494,8 @@ p {
 
 .hero-text {
   max-width: 700px;
-  font-size: 1.05rem;
+  font-size: 1.08rem;
+  color: rgba(255, 255, 255, 0.92);
   text-wrap: pretty;
 }
 
@@ -586,10 +588,10 @@ body.modal-open .sticky-request {
 .trust-item,
 .feature,
 .info-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
+  background: linear-gradient(180deg, #ffffff 0%, #fcfbf8 100%);
+  border: 1px solid rgba(17, 24, 39, 0.06);
   border-radius: var(--radius);
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 10px 24px rgba(17, 24, 39, 0.05);
 }
 
 .trust-item,
@@ -634,7 +636,13 @@ body.modal-open .sticky-request {
   background: var(--surface);
   border-radius: 22px;
   overflow: hidden;
-  box-shadow: var(--shadow);
+  box-shadow: 0 16px 40px rgba(17, 24, 39, 0.08);
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.room-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 22px 46px rgba(17, 24, 39, 0.12);
 }
 
 .room-card img {
@@ -657,7 +665,13 @@ body.modal-open .sticky-request {
   height: 220px;
   object-fit: cover;
   border-radius: 18px;
-  box-shadow: var(--shadow);
+  box-shadow: 0 14px 34px rgba(17, 24, 39, 0.08);
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.01);
+  box-shadow: 0 20px 40px rgba(17, 24, 39, 0.12);
 }
 
 .location-box {
@@ -825,9 +839,10 @@ body.modal-open .sticky-request {
   display: grid;
   gap: 12px;
   background: var(--surface);
-  padding: 20px;
-  border-radius: 22px;
-  box-shadow: var(--shadow);
+  padding: 22px;
+  border-radius: 24px;
+  border: 1px solid rgba(17, 24, 39, 0.04);
+  box-shadow: 0 18px 44px rgba(17, 24, 39, 0.08);
 }
 
 .forms-stack {
@@ -1116,6 +1131,7 @@ body.modal-open .sticky-request {
 .btn-primary {
   background: var(--primary);
   color: #fff;
+  box-shadow: 0 10px 24px rgba(15, 118, 110, 0.25);
 }
 
 .btn-primary:hover {
@@ -1125,6 +1141,13 @@ body.modal-open .sticky-request {
 .btn-secondary {
   background: var(--secondary);
   color: #fff;
+}
+
+.hero .btn-secondary {
+  background: rgba(255, 255, 255, 0.16);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  backdrop-filter: blur(10px);
 }
 
 .btn-outline {
@@ -1148,9 +1171,10 @@ body.modal-open .sticky-request {
   bottom: 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  background: rgba(255, 255, 255, 0.98);
-  border-top: 1px solid #dbe2e8;
-  box-shadow: 0 -10px 26px rgba(17, 24, 39, 0.16);
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(12px);
+  border-top: 1px solid rgba(17, 24, 39, 0.08);
+  box-shadow: 0 -8px 24px rgba(17, 24, 39, 0.08);
   z-index: 60;
   padding-bottom: env(safe-area-inset-bottom);
 }
@@ -1158,6 +1182,7 @@ body.modal-open .sticky-request {
 .mobile-cta-bar a {
   text-align: center;
   padding: 15px 8px;
+  font-size: 0.95rem;
   font-weight: 800;
   color: var(--primary-dark);
 }
